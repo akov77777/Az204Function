@@ -17,6 +17,13 @@ namespace Az204Function
         //After publishing to Azure in the address bar in the browser, append the string /api/HttpExample?name=Functions to the base URL and run the request.
 
 
+
+        //https://portal.azure.com/learn.docs.microsoft.com
+        //https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app?source=learn
+
+
+        //Timer trigger https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=python-v2%2Cisolated-process%2Cnodejs-v4&pivots=programming-language-csharp
+
         [FunctionName("HttpExample")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
