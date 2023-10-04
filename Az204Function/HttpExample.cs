@@ -26,10 +26,11 @@ namespace Az204Function
 
         [FunctionName("HttpExample")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
-            ILogger log)
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req
+            //, ILogger log
+            )
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            //log.LogInformation("C# HTTP trigger function processed a request.");
 
             string name = req.Query["name"];
 
@@ -39,7 +40,7 @@ namespace Az204Function
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+                : $"Hello, {name}. This HTTP triggered function executed successfully. 2023-04-10-13:50";
 
             return new OkObjectResult(responseMessage);
         }
