@@ -40,7 +40,7 @@ namespace Az204Function
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully. 2023-04-10-13:50";
+                : $"Hello, {name}. This HTTP triggered function executed successfully. 2023-04-10-21:35";
 
             return new OkObjectResult(responseMessage);
         }
