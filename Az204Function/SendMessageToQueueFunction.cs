@@ -33,7 +33,7 @@ namespace Az204Function
 
         //If we use it with QueueTriggeredFunction
         //it conficts because the same az204queue is trigger
-
+        //http://localhost:7187/api/SendMessageToQueueFunction?message=test&queueName=az204queue&outputQueueName=az204queue-output
         [FunctionName("SendMessageToQueueFunction")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req
