@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Microsoft.Azure.WebJobs.Extensions.Storage.Queues;
 using Microsoft.Extensions.Configuration;
-
+/*
 namespace Az204Function
 {
     public class QueueTriggeredFunction : QueueClientBase
@@ -35,3 +35,4 @@ namespace Az204Function
         }
     }
 }
+*/

@@ -15,7 +15,7 @@ using Az204Function.Models;
 using System.Linq;
 using Azure.Storage;
 using Microsoft.Extensions.Configuration;
-
+/*
 namespace Az204Function
 {
     public abstract class QueueClientBase
@@ -54,3 +54,4 @@ namespace Az204Function
 
     }
 }
+*/

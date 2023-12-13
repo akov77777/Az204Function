@@ -15,7 +15,7 @@ using Az204Function.Models;
 using System.Linq;
 using Azure.Storage;
 using Microsoft.Extensions.Configuration;
-
+/*
 namespace Az204Function
 {
     public class SendMessageToQueueFunction : QueueClientBase
@@ -110,4 +110,4 @@ namespace Az204Function
             return message ?? data?.message;
         }
     }
-}
+}*/
